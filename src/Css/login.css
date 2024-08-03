@@ -1,0 +1,165 @@
+body{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url("../assets/background.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.group {
+  position: relative;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 350px;
+  height: 500px;
+  padding: 10px 0px;
+  padding-top: 60px;
+  padding-bottom: 90px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 20px;
+  position: relative;
+}
+
+.form p {
+  padding-bottom: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.container-1 {
+  padding-top: 30px;
+}
+
+.main-input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 285px;
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  color: #ffffff;
+}
+
+.main-input:focus {
+  outline: none;
+  border-bottom-color: pink;
+}
+
+.lebal-email {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.main-input:focus ~ .lebal-email,
+.main-input:valid ~ .lebal-email {
+  top: -20px;
+  font-size: 14px;
+  color: White;
+}
+
+.highlight-span {
+  position: absolute;
+  height: 60%;
+  width: 0px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.main-input:focus ~ .highlight-span {
+  -webkit-animation: input-focus 0.3s ease;
+  animation: input-focus 0.3s ease;
+}
+
+@keyframes input-focus {
+  from {
+    background: pink;
+  }
+
+  to {
+    width: 185px;
+  }
+}
+
+.submit {
+  width: 80%;
+  margin-top: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  background-color: pink;
+  text-transform: capitalize;
+}
+.submit:hover{
+     cursor: pointer;
+}
+@media only screen and (max-width: 760px) {
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    padding: 10px 0px;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    position: relative;
+  }
+}
